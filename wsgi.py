@@ -580,6 +580,7 @@ class Hello(object):
     ctx.translate(-500,-500)
     spur.Spur(ctx).Gear(500,500,rp_g1,n_g1, pa, "blue")
     ctx.restore()
+    ctx.fillText("陳令宛繪製",500,500);
     # 將第2齒輪逆時鐘轉 90 度之後, 再多轉一齒, 以便與第1齒輪進行囓合
     ctx.save()
     # translate to the origin of second gear
@@ -590,6 +591,7 @@ class Hello(object):
     ctx.translate(-500,-(500+rp_g1+rp_g2))
     spur.Spur(ctx).Gear(500,500+rp_g1+rp_g2,rp_g2,n_g2, pa, "black")
     ctx.restore()
+    ctx.fillText("陳令宛繪製",500,500+rp_g1+rp_g2);
     # 將第3齒輪逆時鐘轉 90 度之後, 再多轉一齒, 以便與第1齒輪進行囓合
     ctx.save()
     # translate to the origin of third gear
@@ -600,6 +602,7 @@ class Hello(object):
     ctx.translate(-(500+ rp_g2+ rp_g3),-(500+rp_g1+rp_g2))
     spur.Spur(ctx).Gear(500+ rp_g2+ rp_g3,500+rp_g1+rp_g2,rp_g3, n_g3, pa, "blue")
     ctx.restore()
+    ctx.fillText("簡珮羽繪製",500+ rp_g2+ rp_g3,500+rp_g1+rp_g2);
     # 將第4齒輪逆時鐘轉 90 度之後, 再多轉一齒, 以便與第1齒輪進行囓合
     ctx.save()
     # translate to the origin of third gear
@@ -610,11 +613,12 @@ class Hello(object):
     ctx.translate(-(500+ rp_g2+ rp_g3),-(500+rp_g1+rp_g2+ rp_g3+ rp_g4))
     spur.Spur(ctx).Gear(500+ rp_g2+ rp_g3,500+rp_g1+rp_g2+ rp_g3+ rp_g4,rp_g4, n_g4, pa, "black")
     ctx.restore()
+    ctx.fillText("簡珮羽繪製",500+ rp_g2+ rp_g3,500+rp_g1+rp_g2+ rp_g3+ rp_g4);
 
 
 
     </script>
-    <canvas id="plotarea" width="1500" height="2000"></canvas>
+    <canvas id="plotarea" width="1500" height="3000"></canvas>
     </body>
     </html>
     '''
